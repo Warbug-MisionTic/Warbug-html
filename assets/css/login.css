@@ -48,7 +48,7 @@ form {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
     padding: 0 50px;
     height: 100%;
     text-align: center;
@@ -75,6 +75,7 @@ input {
 }
 
 .form-container {
+    
     position: absolute;
     top: 0;
     height: 100%;
@@ -85,4 +86,10 @@ input {
     left: 0;
     width: 100%;
     z-index: 2;
+}
+.form-box{
+    margin-right: 2rem;
+}
+.form-logo{
+
 }
