@@ -11,14 +11,23 @@
 
 <body>
     <div class="contenedor-total">
-            <header class="encabezado">
+        <header class="encabezado">
+            <div class="encabezado-imagen">
                 <img src="/Img/logo.jpg" alt="Logo">
-                <nav>
+            </div>
+
+            <nav class="navegacion">
+                <div class="navegacion-contenedor">
                     <a class="a1" href="#">Ingresos y egresos</a>
                     <a class="a2" href="#">Usuarios</a>
                     <a class="a3" href="#">Empresas</a>
-                </nav>
-            </header>
+
+                </div>
+
+            </nav>
+
+
+        </header>
         <main>
             <h1 class="titulo">Sistema de gestión de Ingresos y Gastos</h1>
             <h2 class="subtitulo">Empresas</h2>
@@ -27,14 +36,19 @@
                     <span>
                         <h3>Nueva Empresa</h3>
                     </span>
-                    <label for="nombre">Nombre</label>
-                    <input type="text" placeholder="  Nombre" id="nombre">
+                    <div class="formulario-container">
 
-                    <label for="correo">Correo</label>
-                    <input type="email" placeholder="  Correo electrónico" id="correo">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" placeholder="  Nombre" id="nombre">
 
-                    <label for="lider">Lider</label>
-                    <input type="text" placeholder="  Lider" id="lider">
+                        <label for="correo">Correo</label>
+                        <input type="email" placeholder="  Correo electrónico" id="correo">
+
+                        <label for="lider">Lider</label>
+                        <input type="text" placeholder="  Lider" id="lider">
+                        <button>Value</button>
+                    </div>
+
                 </form>
             </div>
 

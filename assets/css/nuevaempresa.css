@@ -2,7 +2,6 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    background-color: white;
 }
 
 
@@ -17,19 +16,16 @@
     height: 100vh;
     position: relative;
     overflow: hidden;
+    justify-content: center;
 
 
 }
 
 img {
-
-    position: relative;
     height: 10rem;
     width: 10rem;
-    left: 7rem;
-    right: 5rem;
-    top: 3rem;
-
+    box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%);
+    border-radius: 50%;
 }
 
 nav {
@@ -52,7 +48,6 @@ nav {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     justify-content: center;
-    margin: 3.3rem;
     background-color: white;
     font-size: 1rem;
     font-weight: bold;
@@ -61,7 +56,6 @@ nav {
     width: 13vw;
     height: 3rem;
     border-radius: 2rem;
-    order: 1px solid #FF4B2B;
     background-color: #FF4B2B;
 
 }
@@ -108,7 +102,6 @@ main .subtitulo {
 
 .formulario {
     width: 600px;
-    height: 400px;
     margin-top: 7rem;
     left: 22%;
     top: 12%;
@@ -116,14 +109,12 @@ main .subtitulo {
     border-radius: 1rem;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
         0 10px 10px rgba(0, 0, 0, 0.22);
-    order: 1px solid #FF4B2B;
     background-color: #FF4B2B;
 
 }
 
 main .formulario,
 h3 {
-    order: 1px solid #FF4B2B;
     background-color: #FF4B2B;
 
 }
@@ -139,10 +130,17 @@ h3 {
     background-color: #FF4B2B;
 }
 
+.formulario-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
 .formulario input {
     display: flex;
     flex-direction: column;
-    margin-left: 9rem;
     width: 20rem;
     height: 3rem;
     margin-bottom: 2rem;
@@ -157,9 +155,7 @@ h3 {
     font-size: 1rem;
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-left: 9rem;
     color: white;
-    order: 1px solid #FF4B2B;
     background-color: #FF4B2B;
 
 }
@@ -249,4 +245,21 @@ h3 {
     opacity: 0;
     -ms-transition: opacity 0.35s ease-in-out;
     transition: opacity 0.35s ease-in-out;
+}
+
+.navegacion {
+    display: flex;
+    justify-content: center;
+}
+
+.navegacion-contenedor {
+    margin: 15px 0;
+}
+
+.navegacion-contenedor a {
+    margin: 40px 0;
+}
+
+.encabezado-imagen {
+    margin: 40px 0;
 }
