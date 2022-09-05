@@ -11,41 +11,59 @@
 }
 
 .encabezado {
-    display: inline-block;
-    
-    background-color: rgb(211, 199, 199);
-    width: 24%;
+    display: inline-flex;
+    /*background-color: rgb(211, 199, 199);*/
+    /*border: 1px solid #FF4B2B;*/
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+        0 10px 10px rgba(0, 0, 0, 0.22);
+    background-color: white;   
+    width: 20%;
     height: 100vh;
     position: relative;
+    overflow: hidden;
+
     
 }
 
 img {
-    position: absolute;
-    left: 5rem;
+
+    position: relative;
+    height: 10rem;
+    width: 10rem;
+    left: 7rem;
+    right: 5rem;
     top: 3rem;
-    border-radius: 6rem;
+
 }
 nav {
     position: absolute;
-    top: 12rem;
-    background-color: rgb(211, 199, 199);
+    top: 15rem;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+        0 10px 10px rgba(0, 0, 0, 0.22);
+    right: 1rem;
+    left: 1rem;
+
 }
 .a1, .a2, .a3{
     display: flex;
     flex-direction: column;
-    font-family: sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
-    justify-content: center;
+    justify-content:center;
     margin: 3.3rem;
     background-color: white;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bold;
     text-decoration: none;
-    color: black;
-    width: 15vw;
+    color: white;
+    width: 13vw;
     height: 3rem;
     border-radius: 2rem;
+    order: 1px solid #FF4B2B;
+    background-color: #FF4B2B;
+
 }
 
 .a1:hover {
@@ -73,18 +91,16 @@ main .titulo {
     text-align: center;
     position: static;
     background-color: white;
-    font-family: sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 2.5rem;
     color: black;
 }
 
 main .subtitulo {
     text-decoration: underline;
-    position: absolute;
-    top: 5.5rem;
-    left: 5rem;
+    text-align: center;
     background-color: white;
-    font-family: sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 2rem;
 }
 
@@ -92,22 +108,32 @@ main .subtitulo {
     width: 600px;
     height: 400px;
     margin-top: 7rem;
-    position: absolute;
     left: 22%;
+    top: 12%;
     background-color: #BADAED;
-    border-radius: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+        0 10px 10px rgba(0, 0, 0, 0.22);
+    order: 1px solid #FF4B2B;
+    background-color: #FF4B2B;
+    
 }
 
 main .formulario, h3 {
-    background-color: rgb(211, 199, 199);
+    order: 1px solid #FF4B2B;
+    background-color: #FF4B2B;
+    
 }
 
 .formulario span {
     text-align: center;
     margin: 4rem;
     font-size: 1.5rem;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
+    color: white;
+    order: 1px solid #FF4B2B;
+    background-color: #FF4B2B;
 }
 
 .formulario input {
@@ -118,7 +144,8 @@ main .formulario, h3 {
     height: 3rem;
     margin-bottom: 2rem;
     border: none;
-    
+    border-radius: 1rem;
+    outline-color: #BADAED;
 }
 
 .formulario label {
@@ -126,11 +153,89 @@ main .formulario, h3 {
     flex-direction: column;
     font-size: 1rem;
     font-weight: bold;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-left: 9rem;
-    background-color: rgb(211, 199, 199);
-    margin-bottom: 0.5rem;
+    color: white;
+    order: 1px solid #FF4B2B;
+    background-color: #FF4B2B;
+    
 }
 
+.labels-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+}
 
+::-webkit-input-placeholder {
+    color: #000;
+    opacity: 0.5;
+    -webkit-transition: opacity 0.35s ease-in-out;
+    transition: opacity 0.35s ease-in-out;
+}
+:-moz-placeholder {
+    color: #000;
+    opacity: 0.5;
+    -moz-transition: opacity 0.35s ease-in-out;
+    transition: opacity 0.35s ease-in-out;
+}
+:-moz-placeholder {
+    color: #000;
+    opacity: 0.5;
+    -moz-transition: opacity 0.35s ease-in-out;
+    transition: opacity 0.35s ease-in-out;
+}
+::-ms-input-placeholder {  
+    color: #000;
+    opacity: 0.5;
+    -ms-transition: opacity 0.35s ease-in-out;
+    transition: opacity 0.35s ease-in-out;
+}
+  
+  /* Place Holder CSS for Focus */
+:hover::-webkit-input-placeholder {
+    opacity: 0.75;
+    -webkit-transition: opacity 0.35s ease-in-out;
+    transition: opacity 0.35s ease-in-out;
+}
+:hover:-moz-placeholder {
+    opacity: 0.75;
+    -moz-transition: opacity 0.35s ease-in-out;
+    transition: opacity 0.35s ease-in-out;
+}
+:hover::-moz-placeholder {
+    opacity: 0.75;
+    -moz-transition: opacity 0.35s ease-in-out;
+    transition: opacity 0.35s ease-in-out;
+}
+:hover:-ms-input-placeholder {  
+    opacity: 0.75;
+    -ms-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+  
+  
+  /* Place Holder CSS for Focus */
+:focus::-webkit-input-placeholder {
+    opacity: 0;
+    -webkit-transition: opacity 0.35s ease-in-out;
+    transition: opacity 0.35s ease-in-out;
+}
+:focus:-moz-placeholder {
+    opacity: 0;
+    -moz-transition: opacity 0.35s ease-in-out;
+    transition: opacity 0.35s ease-in-out;
+}
+:focus::-moz-placeholder {
+    opacity: 0;
+    -moz-transition: opacity 0.35s ease-in-out;
+    transition: opacity 0.35s ease-in-out;
+}
+:focus:-ms-input-placeholder {  
+    opacity: 0;
+    -ms-transition: opacity 0.35s ease-in-out;
+    transition: opacity 0.35s ease-in-out;
+}
 
