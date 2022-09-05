@@ -1,14 +1,10 @@
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     background-color: white;
 }
 
-.contenedor-total {
-    width: 940px;
-    margin: auto;
-}
 
 .encabezado {
     display: inline-flex;
@@ -16,13 +12,13 @@
     /*border: 1px solid #FF4B2B;*/
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
         0 10px 10px rgba(0, 0, 0, 0.22);
-    background-color: white;   
+    background-color: white;
     width: 20%;
     height: 100vh;
     position: relative;
     overflow: hidden;
 
-    
+
 }
 
 img {
@@ -35,6 +31,7 @@ img {
     top: 3rem;
 
 }
+
 nav {
     position: absolute;
     top: 15rem;
@@ -46,12 +43,15 @@ nav {
     left: 1rem;
 
 }
-.a1, .a2, .a3{
+
+.a1,
+.a2,
+.a3 {
     display: flex;
     flex-direction: column;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
-    justify-content:center;
+    justify-content: center;
     margin: 3.3rem;
     background-color: white;
     font-size: 1rem;
@@ -70,10 +70,12 @@ nav {
     background-color: grey;
     transition: 1000ms;
 }
+
 .a2:hover {
     background-color: grey;
     transition: 1000ms;
 }
+
 .a3:hover {
     background-color: grey;
     transition: 1000ms;
@@ -116,13 +118,14 @@ main .subtitulo {
         0 10px 10px rgba(0, 0, 0, 0.22);
     order: 1px solid #FF4B2B;
     background-color: #FF4B2B;
-    
+
 }
 
-main .formulario, h3 {
+main .formulario,
+h3 {
     order: 1px solid #FF4B2B;
     background-color: #FF4B2B;
-    
+
 }
 
 .formulario span {
@@ -158,15 +161,15 @@ main .formulario, h3 {
     color: white;
     order: 1px solid #FF4B2B;
     background-color: #FF4B2B;
-    
+
 }
 
-.labels-container{
+.labels-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    
+
 }
 
 ::-webkit-input-placeholder {
@@ -175,67 +178,75 @@ main .formulario, h3 {
     -webkit-transition: opacity 0.35s ease-in-out;
     transition: opacity 0.35s ease-in-out;
 }
+
 :-moz-placeholder {
     color: #000;
     opacity: 0.5;
     -moz-transition: opacity 0.35s ease-in-out;
     transition: opacity 0.35s ease-in-out;
 }
+
 :-moz-placeholder {
     color: #000;
     opacity: 0.5;
     -moz-transition: opacity 0.35s ease-in-out;
     transition: opacity 0.35s ease-in-out;
 }
-::-ms-input-placeholder {  
+
+::-ms-input-placeholder {
     color: #000;
     opacity: 0.5;
     -ms-transition: opacity 0.35s ease-in-out;
     transition: opacity 0.35s ease-in-out;
 }
-  
-  /* Place Holder CSS for Focus */
+
+/* Place Holder CSS for Focus */
 :hover::-webkit-input-placeholder {
     opacity: 0.75;
     -webkit-transition: opacity 0.35s ease-in-out;
     transition: opacity 0.35s ease-in-out;
 }
+
 :hover:-moz-placeholder {
     opacity: 0.75;
     -moz-transition: opacity 0.35s ease-in-out;
     transition: opacity 0.35s ease-in-out;
 }
+
 :hover::-moz-placeholder {
     opacity: 0.75;
     -moz-transition: opacity 0.35s ease-in-out;
     transition: opacity 0.35s ease-in-out;
 }
-:hover:-ms-input-placeholder {  
+
+:hover:-ms-input-placeholder {
     opacity: 0.75;
     -ms-transition: opacity 0.35s ease-in-out;
-  transition: opacity 0.35s ease-in-out;
+    transition: opacity 0.35s ease-in-out;
 }
-  
-  
-  /* Place Holder CSS for Focus */
+
+
+/* Place Holder CSS for Focus */
 :focus::-webkit-input-placeholder {
     opacity: 0;
     -webkit-transition: opacity 0.35s ease-in-out;
     transition: opacity 0.35s ease-in-out;
 }
+
 :focus:-moz-placeholder {
     opacity: 0;
     -moz-transition: opacity 0.35s ease-in-out;
     transition: opacity 0.35s ease-in-out;
 }
+
 :focus::-moz-placeholder {
     opacity: 0;
     -moz-transition: opacity 0.35s ease-in-out;
     transition: opacity 0.35s ease-in-out;
 }
-:focus:-ms-input-placeholder {  
+
+:focus:-ms-input-placeholder {
     opacity: 0;
     -ms-transition: opacity 0.35s ease-in-out;
     transition: opacity 0.35s ease-in-out;
 }
-
